@@ -18,9 +18,8 @@ const fetchItemsFailure = (err) => ({
 export const fetchItems = () => dispatch => {
     dispatch(fetchItemsRequest())
 
-    console.log('fetching')
-
     axios.get('https://raw.githubusercontent.com/cy6eria/test_task/master/posts.json')
+    // axios.get('/data.json')
         .then(res => {
             if (res.status === 200) {
                 dispatch(fetchItemsSuccess(res))

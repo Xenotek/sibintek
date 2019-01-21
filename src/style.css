@@ -13,9 +13,45 @@ html {
   box-sizing: inherit;
 }
 
+
 :focus { outline: 0 }
 
-.app {
-  position: relative;
-  height: 100%;
+label{
+	cursor: pointer;
+}
+
+.app{
+	max-width: 700px;
+	margin: 0 auto;
+}
+.toolbar {
+	background: #a4cfef;
+	padding: 10px;	
+	margin-bottom: 10px;
+}
+.toolbar__button{
+
+}
+
+.toolbar__filters{
+	margin-bottom: 10px;
+}
+
+.toolbar__search{
+	height: 30px;
+	width: 100%;
+	padding: 0 4px;
+    border: 1px solid #2A6D8E;
+}
+
+button {
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #42ABE1;
+  border: 1px solid #2A6D8E;
+  padding: 3px 15px;
+  margin: 0 6px;	
+  color: #ffffff;
+  outline: none;
 }

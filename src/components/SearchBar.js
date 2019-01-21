@@ -8,7 +8,7 @@ class SearchBar extends Component{
     }
 
     render() {
-        return <input placeholder="Поиск" onChange={this.onTextChanged} />;
+        return <input className="toolbar__search" placeholder="Поиск" onChange={this.onTextChanged} />;
     }
 }
 
